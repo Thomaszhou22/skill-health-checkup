@@ -57,11 +57,11 @@ skills 目录 ──▶ scan_skills.py ──▶ 名称 / 描述 / 关键词
 
 ```bash
 # ClawHub
-clawhub install skill-health-checkup
+clawhub install skill-health-scan
 
 # 或从源码
-git clone https://github.com/Thomaszhou22/skill-health-checkup.git
-cp -r skill-health-checkup ~/.openclaw/skills/
+git clone https://github.com/Thomaszhou22/skill-health-scan.git
+cp -r skill-health-scan ~/.openclaw/skills/
 ```
 
 ## 快速开始
@@ -76,7 +76,7 @@ python3 scripts/scan_skills.py --dir ~/.openclaw/skills --json
 ## 文件结构
 
 ```
-skill-health-checkup/
+skill-health-scan/
 ├── SKILL.md                    # 体检流程（5 项检查 + 修复协议）
 ├── scripts/
 │   └── scan_skills.py          # 确定性扫描器（纯标准库）

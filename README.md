@@ -57,11 +57,11 @@ The script handles deterministic facts (parse frontmatter, extract trigger phras
 
 ```bash
 # ClawHub
-clawhub install skill-health-checkup
+clawhub install skill-health-scan
 
 # Or from source
-git clone https://github.com/Thomaszhou22/skill-health-checkup.git
-cp -r skill-health-checkup ~/.openclaw/skills/
+git clone https://github.com/Thomaszhou22/skill-health-scan.git
+cp -r skill-health-scan ~/.openclaw/skills/
 ```
 
 ## Quick Start
@@ -76,7 +76,7 @@ python3 scripts/scan_skills.py --dir ~/.openclaw/skills --json
 ## Files
 
 ```
-skill-health-checkup/
+skill-health-scan/
 ├── SKILL.md                    # the exam (5 checks + fix protocol)
 ├── scripts/
 │   └── scan_skills.py          # deterministic scanner (stdlib only)
