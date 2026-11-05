@@ -1,6 +1,6 @@
 ---
 name: skill-health-checkup
-version: 1.0.0
+version: 1.0.1
 description: "Use when two skills fire for the same request, or a skill never fires at all — scans every installed skill, maps trigger overlaps and blind spots, delivers one health report with fixes. 当多个技能被同一句话触发、或某个技能从不触发时使用——扫描全部已装技能，找出触发重叠与盲区，输出一份带修复建议的体检报告。"
 ---
 
