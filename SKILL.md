@@ -1,6 +1,6 @@
 ---
 name: skill-health-scan
-version: 1.1.1
+version: 1.1.2
 description: Use when two skills fire for the same request, or a skill never fires at all scans every installed skill, maps trigger overlaps and blind spots, delivers one health report with fixes. skillsskillsscanAllinstalled skills, map trigger overlaps and blind spots, deliver acheckupreport
 ---
 
