@@ -8,6 +8,29 @@ description: "Use when two skills fire for the same request, or a skill never fi
 
 Your skills fight each other for attention — or never get any. This skill runs a full physical exam on every installed skill and ships one report: who overlaps whom, who is dead weight, who has a broken description.
 
+
+## Onboarding（首次使用）
+
+当用户第一次触发本 skill 且 `memory/skill_health_scan_state.json` 不存在时，执行一次性引导：
+
+1. **介绍能力**（一句话）：_"我可以给你已安装的全部技能做体检——谁和谁触发重叠、谁的描述有缺陷，一份报告全看清。"_
+
+2. **快速配置：**
+
+1. **报告语言**（默认：跟随用户输入语言）
+   - 中文 / English / 跟随用户
+2. **修复建议模式**（默认：仅报告 + 建议）
+   - 仅报告（发现问题，不改文件）
+   - 报告 + 建议修改（展示 diff，用户确认后执行）
+
+3. **写入初始状态文件** `memory/skill_health_scan_state.json`（JSON 格式，含 `onboarded: true` 和时间戳）
+
+4. **确认完成**：_"设置完成！以后直接用就行。随时可以说'reset settings'重新配置。"_
+
+**Onboarding 只执行一次**，后续每次激活直接读取状态文件。用户说 "reset settings" 时删除状态文件重新引导。
+
+---
+
 ## Startup
 
 1. Locate the skills directory (try in order: `~/.openclaw/skills/`, `<project>/.claude/skills/`, `~/.claude/skills/`; if none exists, ask the user where skills live)
